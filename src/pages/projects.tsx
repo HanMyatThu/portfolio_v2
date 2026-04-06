@@ -6,6 +6,7 @@ interface Project {
   description: string;
   tech: string[];
   details: string;
+  image?: string;
   link?: string;
   demo?: string;
 }
@@ -13,20 +14,19 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Photo51",
-    description: "Molecular biology analysis software.",
+    description: "Molecular biology analysis software for scientists.",
     details:
-      "Developed a web-based application for analyzing molecular biology data, featuring advanced visualization tools and collaborative capabilities.",
+      "Developed a cloud and desktop based application for analyzing molecular biology data, featuring advanced visualization tools and collaborative capabilities.",
     tech: ["React", "TypeScript", "Node.js", "PHP/Laravel", "Electron", "AWS", "Docker", "StoryBook"],
-    link: "#",
+    link: "https://fearlessleague.com/photo51",
   },
   {
-    title: "Spreadsheet Web App",
-    description: "Excel-like app with dynamic formulas.",
+    title: "Spark ELN",
+    description: "Electronic Lab Notebook with AI-assisted features for schools, universities, and research institutions.",
     details:
-      "Built using FortuneSheet and React, this application supports real-time updates, formula parsing, and efficient state management for large datasets.",
-    tech: ["React", "TypeScript", "FortuneSheet"],
+      "Created an AI-powered electronic lab notebook that streamlines data entry, enhances real-time collaboration, and provides intelligent insights for researchers and students.",
+    tech: ["React", "TypeScript", "Node.js", "WebSocket", "PHP/Laravel", "Electron", "AWS", "Docker", "StoryBook"],
     link: "#",
-    demo: "#",
   },
   {
     title: "Cloud Platform",
@@ -34,6 +34,7 @@ const projects: Project[] = [
     details:
       "Designed a cloud architecture with load balancing, auto-scaling, and CI/CD pipelines to handle high traffic efficiently.",
     tech: ["AWS", "Docker", "Node.js"],
+    link: "",
   },
 ];
 
