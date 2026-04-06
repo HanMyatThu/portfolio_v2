@@ -16,16 +16,18 @@ export default function Contact() {
         Feel free to reach out if you want to build something amazing.
       </p>
 
-      {/* Contact info */}
       <div className="flex flex-col items-center gap-4 mb-8">
-        <span className="text-gray-300">📧 han.dev@email.com</span>
-        <span className="text-gray-300">🌍 Netherlands</span>
-        <span className="text-gray-300">💼 linkedin.com/in/han-dev</span>
+        <span className="text-gray-300">📧 hanmyatthu111@gmail.com</span>
+        <span 
+          onClick={() => window.open('https://www.linkedin.com/in/han-myat-thu-879046182/')}
+          className="text-gray-300"
+        >
+          💼 https://www.linkedin.com/in/han-myat-thu-879046182/
+          </span>
       </div>
 
-      {/* CTA */}
       <a
-        href="mailto:han.dev@email.com"
+        href="mailto:hanmyatthu111@gmail.com"
         className="glass neon px-8 py-4 rounded-xl inline-block"
       >
         Send Message

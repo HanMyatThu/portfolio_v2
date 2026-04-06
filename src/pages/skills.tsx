@@ -3,12 +3,24 @@ import { motion } from "framer-motion";
 const skills = [
   "React",
   "TypeScript",
+  "Next.js",
   "Node.js",
+  "PHP/Laravel",
+  "Golang",
+  "Express",
+  "NestJS",
   "AWS",
+  "Azure",
   "Tailwind",
   "Docker",
   "Redis",
   "GraphQL",
+  "MySQL",
+  "MongoDB",
+  "Jest",
+  "Playwright",
+  "StoryBook",
+
 ];
 
 export default function Skills() {

@@ -6,18 +6,18 @@ interface Project {
   description: string;
   tech: string[];
   details: string;
-  github?: string;
+  link?: string;
   demo?: string;
 }
 
 const projects: Project[] = [
   {
-    title: "AI Flappy Bird",
-    description: "Reinforcement learning game using DQN.",
+    title: "Photo51",
+    description: "Molecular biology analysis software.",
     details:
-      "This project implements a Deep Q-Network agent that learns to play Flappy Bird autonomously. It uses reward shaping, epsilon-greedy exploration, and neural networks to improve performance over time.",
-    tech: ["Python", "Pygame", "DQN"],
-    github: "#",
+      "Developed a web-based application for analyzing molecular biology data, featuring advanced visualization tools and collaborative capabilities.",
+    tech: ["React", "TypeScript", "Node.js", "PHP/Laravel", "Electron", "AWS", "Docker", "StoryBook"],
+    link: "#",
   },
   {
     title: "Spreadsheet Web App",
@@ -25,7 +25,7 @@ const projects: Project[] = [
     details:
       "Built using FortuneSheet and React, this application supports real-time updates, formula parsing, and efficient state management for large datasets.",
     tech: ["React", "TypeScript", "FortuneSheet"],
-    github: "#",
+    link: "#",
     demo: "#",
   },
   {
@@ -105,15 +105,12 @@ export default function Projects() {
               </div>
 
               <div className="flex gap-4">
-                {selected.github && (
-                  <a href={selected.github} className="text-blue-400">
-                    GitHub
-                  </a>
-                )}
-                {selected.demo && (
-                  <a href={selected.demo} className="text-purple-400">
-                    Live Demo
-                  </a>
+                {selected.link && (
+                  <button className="px-5 py-2 rounded-full bg-cyan-700 hover:bg-cyan-600 transition">
+                    <a href={selected.link} className="text-blue-400">
+                      Demo / Link
+                    </a>
+                  </button>
                 )}
               </div>
             </motion.div>
