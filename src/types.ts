@@ -8,6 +8,6 @@ export interface ExperienceItem {
   company: string;
   year: string;
   icon?: string;
-  desc?: string;
+  desc?: string[];
 }
 
