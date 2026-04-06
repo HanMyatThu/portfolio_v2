@@ -3,7 +3,7 @@
 html, body {
   background: #020617;
   color: white;
-  scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 
 .glass {
@@ -12,6 +12,12 @@ html, body {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
-.glow {
-  box-shadow: 0 0 80px rgba(14,165,233,0.3);
+.neon {
+  box-shadow: 0 0 40px rgba(14,165,233,0.4);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #0ea5e9, #a78bfa);
+  -webkit-background-clip: text;
+  color: transparent;
 }
