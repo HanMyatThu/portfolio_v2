@@ -8,6 +8,8 @@ import "./index.css";
 
 const lenis = new Lenis();
 
+(window as any).lenis = lenis;
+
 function raf(time: number) {
   lenis.raf(time);
   requestAnimationFrame(raf);
